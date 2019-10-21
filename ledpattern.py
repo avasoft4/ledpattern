@@ -1,0 +1,45 @@
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BOARD)
+led1=29
+led2=31
+led3=33
+led4=35
+led5=37
+GPIO.setup(led1,GPIO.OUT)
+GPIO.setup(led2,GPIO.OUT)
+GPIO.setup(led3,GPIO.OUT)
+GPIO.setup(led4,GPIO.OUT)
+GPIO.setup(led5,GPIO.OUT)
+while(1):
+    print("led1 ON")
+    GPIO.output(led1,True)
+    time.sleep(1)
+    print("led2 ON")
+    GPIO.output(led2,True)
+    time.sleep(1)
+    print("led3 ON")
+    GPIO.output(led3,True)
+    time.sleep(1)
+    print("led4 ON")
+    GPIO.output(led4,True)
+    time.sleep(1)
+    print("led5 ON")
+    GPIO.output(led5,True)
+    time.sleep(1)
+    print("led1 OFF")
+    GPIO.output(led1,False)
+    time.sleep(1)
+    print("led2 OFF")
+    GPIO.output(led2,False)
+    time.sleep(1)
+    print("led3 OFF")
+    GPIO.output(led3,False)
+    time.sleep(1)
+    print("led4 OFF")
+    GPIO.output(led4,False)
+    time.sleep(1)
+    print("led5 OFF")
+    GPIO.output(led5,False)
+    time.sleep(1)
+GPIO.cleanup()
